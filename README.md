@@ -6,7 +6,7 @@
   - Command: conda create --name test_env python = 3.10
   - Command: conda activate test_env
   - Command: pip install -r "requirements.txt"
-  - Command: python evaluate_model.py
+  - Command: python evaluate_model.py path_to_your_csv_data
 
 *Run the commands on your Anaconda Prompt
 
