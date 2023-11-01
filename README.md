@@ -15,7 +15,7 @@
   - EDA of Fashion MNIST
   - Identification and classification of Sustainable Apparel Products
 
-		DATA ANALYSIS
+	DATA ANALYSIS
 
   - In both train data & test data, there are 785 columns, out of which, the 1st column is the label & the rest are the input features
   - The number of columns is the same for both train data & test data; however, the number of rows differs. For train data, there are 60000 rows & test data has 10000 rows. So, there are 60000 training data & 10000 testing data.
@@ -36,10 +36,10 @@
   - I tested for training & validation curve, and confusion matrix when evaluating the model.
   - I also printed out the precision, recall & F1 score of the model since that's a great way of observing a model's performance. 
   
-		HUMAN IN THE LOOP
+	HUMAN IN THE LOOP
 
-	A possible method of keeping humans in the loop might be to give the users the option to vote whether or not the prediction made by the machine was correct. Based on that feedback, the model can be further improved. 
+A possible method of keeping humans in the loop might be to give the users the option to vote whether or not the prediction made by the machine was correct. Based on that feedback, the model can be further improved. 
 
-		FINAL THOUGHTS
+	FINAL THOUGHTS
 
 MNIST is a benchmark dataset. Therefore, it's a great place to start working on models. The model that was built for this project can be improved over time by various methods & creativity. It has the potential of being the ideal dataset for building models for the fashion industry owing to the quality & quantity of data. One can build the foundation of a new model via this before moving on to a more relevant dataset for improved accuracy.  
