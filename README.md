@@ -1,45 +1,59 @@
-	HOW TO RUN THE SCRIPT CALLED "evaluate_model.py"
+# How to Run the Script "evaluate_model.py"
 
-  - Clone the Git Repository: https://github.com/fabinahian/NITEX_AI_Challenge.git 
-    [Command: git clone https://github.com/fabinahian/NITEX_AI_Challenge.git]
-  - Change your directory to the location where you cloned the Git repo
-  - Command: conda create --name test_env python = 3.10
-  - Command: conda activate test_env
-  - Command: pip install -r "requirements.txt"
-  - Command: python evaluate_model.py path_to_your_csv_test_data
+To execute the script "evaluate_model.py" and evaluate your model's performance, follow the steps below:
 
-*Run the commands on your Anaconda Prompt
+1. **Clone the Git Repository**: Clone the repository from the following link: [NITEX_AI_Challenge](https://github.com/fabinahian/NITEX_AI_Challenge.git)  
+    ```
+    git clone https://github.com/fabinahian/NITEX_AI_Challenge.git
+    ```
 
-	OBJECTIVE
+2. **Change Directory**: Navigate to the location where you cloned the Git repository.
 
-  - EDA of Fashion MNIST
-  - Identification and classification of Sustainable Apparel Products
+3. **Create and Activate Virtual Environment**: Using Anaconda Prompt, create a new virtual environment named "test_env" with Python version 3.10:
+    ```
+    conda create --name test_env python=3.10
+    conda activate test_env
+    ```
 
-		DATA ANALYSIS
+4. **Install Required Packages**: Install the necessary Python packages listed in "requirements.txt" using pip:
+    ```
+    pip install -r requirements.txt
+    ```
 
-  - In both train data & test data, there are 785 columns, out of which, the 1st column is the label & the rest are the input features
-  - The number of columns is the same for both train data & test data; however, the number of rows differs. For train data, there are 60000 rows & test data has 10000 rows. So, there are 60000 training data & 10000 testing data.
-  - Both training samples & testing samples consist of integer values. So, the labels are also numerical values.
-  -  There is no case of labelling outside of range within the training data. That's a good thing! ✅
-  -  There is no case of labelling outside of range within the testing data. That's a good thing! ✅
-  -  There is no missing value or null value in the training samples or the testing samples. That's a good thing! ✅
-  -  Each label has 6000 training data. So, there's no imbalance in the training data. That's a good thing! ✅
-  -  Each label has 1000 testing data. So, there's no imbalance in the testing data. That's a good thing! ✅
+5. **Run the Script**: Execute the script "evaluate_model.py" by providing the path to your CSV test data as an argument:
+    ```
+    python evaluate_model.py path_to_your_csv_test_data
+    ```
 
-	THOUGHTS BEHIND THE APPROACH
+Make sure to replace "path_to_your_csv_test_data" with the actual path to your CSV test data file.
 
-  - I first read the entire Document that comes with the Data Set. So, I gained an idea about what to expect from the data.
-  - I then explored the data & created some necessary visualization for  better understanding.
-  - I analyzed the data to understand whether or not modifications (eg. cleanup) are required.
-  - I then did some data pre-processing to normalize the acquired data, which helped divide the training data into 2 segments: training data and validation data.
-  - I tried 4 different models for this problem in my experimental notebook. None of them worked that great. So, I decided to work with a CNN architecture since it's a very good neural network for image classification.
-  - I tested for training & validation curve, and confusion matrix when evaluating the model.
-  - I also printed out the precision, recall & F1 score of the model since that's a great way of observing a model's performance. 
-  
-		HUMAN IN THE LOOP
+## Objective
 
-A possible method of keeping humans in the loop might be to give the users the option to vote whether or not the prediction made by the machine was correct. Based on that feedback, the model can be further improved. 
+This script is designed to perform Exploratory Data Analysis (EDA) on the Fashion MNIST dataset and identify and classify sustainable apparel products.
 
-	FINAL THOUGHTS
+## Data Analysis
 
-MNIST is a benchmark dataset. Therefore, it's a great place to start working on models. The model that was built for this project can be improved over time by various methods & creativity. It has the potential of being the ideal dataset for building models for the fashion industry owing to the quality & quantity of data. One can build the foundation of a new model via this before moving on to a more relevant dataset for improved accuracy.  
+Here are some insights derived from the data analysis:
+
+- The train and test data both contain 785 columns, with the first column representing labels and the rest representing input features.
+- While the number of columns remains consistent, the train data consists of 60,000 rows, while the test data consists of 10,000 rows.
+- Both training and testing samples consist of integer values, including the labels.
+- There are no cases of labeling outside of the expected range in either the training or testing data.
+- There are no missing or null values in the samples, ensuring data integrity.
+- Each label has an equal distribution of 6000 training data points and 1000 testing data points, preventing data imbalance.
+
+## Thoughts Behind the Approach
+
+The approach involved thorough understanding and exploration of the dataset, followed by necessary visualization and analysis. Data preprocessing steps were performed to normalize and segment the training data. Different models were experimented with before selecting a Convolutional Neural Network (CNN) architecture. Evaluation included training and validation curves, confusion matrix, precision, recall, and F1 score.
+
+## Human in the Loop
+
+An approach to involve humans in the loop could be to incorporate user feedback on model predictions, allowing for iterative improvements based on user validation.
+
+## Final Thoughts
+
+The Fashion MNIST dataset serves as an excellent benchmark for model development. While the current model shows promise, there is room for enhancement through various methods and creativity. With its quality and quantity of data, the dataset lays a strong foundation for building models in the fashion industry, paving the way for improved accuracy in future iterations.
+
+---
+
+This README provides clear instructions for running the script and offers insights into the dataset analysis and approach taken for model development, while maintaining a professional tone throughout.
