@@ -53,7 +53,3 @@ An approach to involve humans in the loop could be to incorporate user feedback 
 ## Final Thoughts
 
 The Fashion MNIST dataset serves as an excellent benchmark for model development. While the current model shows promise, there is room for enhancement through various methods and creativity. With its quality and quantity of data, the dataset lays a strong foundation for building models in the fashion industry, paving the way for improved accuracy in future iterations.
-
----
-
-This README provides clear instructions for running the script and offers insights into the dataset analysis and approach taken for model development, while maintaining a professional tone throughout.
