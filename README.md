@@ -4,7 +4,7 @@ To execute the script "evaluate_model.py" and evaluate your model's performance,
 
 1. **Clone the Git Repository**: Clone the repository from the following link: [NITEX_AI_Challenge](https://github.com/fabinahian/NITEX_AI_Challenge.git)  
     ```
-    git clone https://github.com/fabinahian/NITEX_AI_Challenge.git
+    git clone https://github.com/fabinahian/NITEX-Coding-Challenge.git
     ```
 
 2. **Change Directory**: Navigate to the location where you cloned the Git repository.
